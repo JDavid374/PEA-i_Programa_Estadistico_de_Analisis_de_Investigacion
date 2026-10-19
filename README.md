@@ -33,7 +33,7 @@ Proyecto_PEA-i/
 │   ├── Aplicativo_Python/
 │   │   ├── DLDD-MAFF-JDLA.py                           # Script unificado (GUI Tkinter + API REST + Extractores)
 │   │   ├── grupos.json                                 # Persistencia relacional de grupos en JSON
-│   │   └── investigadores.json                   # Persistencia relacional de investigadores en JSON
+│   │   └── investigadores.json                         # Persistencia relacional de investigadores en JSON
 │   └── Archivos de Prueba/
 │       ├── CSV/
 │       │   ├── Prueba_CvLAC_Adith_Bismarck.csv
