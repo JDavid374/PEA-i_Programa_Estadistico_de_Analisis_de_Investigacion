@@ -20,8 +20,8 @@ La distribución oficial se encuentra empaquetada dentro del directorio [`Proyec
 
 ```text
 Proyecto_PEA-i/
-├── PEA-i.exe                                     # Binario standalone ejecutable (GUI + Scraper API)
-├── Proyecto_PEA-i_VERSION_ACTUAL.zip             # Paquete integral de distribución v1.0
+├── PEA-i.exe                                           # Binario standalone ejecutable (GUI + Scraper API)
+├── Proyecto_PEA-i_VERSION_ACTUAL.zip                   # Paquete integral de distribución v1.0
 │   ├── Aplicativo_CPP/
 │   │   ├── DLDD-MAFF-JDLA.cpp                          # Código fuente C++ (Consola & Cliente WinHTTP)
 │   │   ├── DLDD-MAFF-JDLA.exe                          # Ejecutable compilado C++
@@ -31,8 +31,8 @@ Proyecto_PEA-i/
 │   │   └── scraper/
 │   │       └── PEA-i.exe
 │   ├── Aplicativo_Python/
-│   │   ├── DLDD-MAFF-JDLA.py                     # Script unificado (GUI Tkinter + API REST + Extractores)
-│   │   ├── grupos.json                           # Persistencia relacional de grupos en JSON
+│   │   ├── DLDD-MAFF-JDLA.py                           # Script unificado (GUI Tkinter + API REST + Extractores)
+│   │   ├── grupos.json                                 # Persistencia relacional de grupos en JSON
 │   │   └── investigadores.json                   # Persistencia relacional de investigadores en JSON
 │   └── Archivos de Prueba/
 │       ├── CSV/
@@ -41,13 +41,13 @@ Proyecto_PEA-i/
 │       └── PDF/
 │           ├── Adith Bismarck.pdf
 │           └── Aitice.pdf
-└── Versiones/                                    # Registro histórico de entregables
-    ├── alphas                                    # Versiones Alpha del Aplicativo
+└── Versiones/                                          # Registro histórico de entregables
+    ├── alphas                                          # Versiones Alpha del Aplicativo
     │   ├── Proyecto_PEA-i_Alpha_1.zip
-    │   ├── Proyecto_PEA-i_Alpha_2.zip
-    ├── betas                                     # Versiones Beta del aplicativo
+    │   └── Proyecto_PEA-i_Alpha_2.zip
+    ├── betas                                           # Versiones Beta del aplicativo
     │   └── Proyecto_PEA-i_Beta_1.zip ... Beta_7.zip
-    └── releases                                  # Versiones Finales
+    └── releases                                        # Versiones Finales
         └──Proyecto_PEA-i_V1_(VERSION_FINAL_ACTUAL).zip
 ```
 
