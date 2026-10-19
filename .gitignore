@@ -1,7 +1,0 @@
-# Ignorar ejecutables y comprimidos
-*.exe
-*.zip
-
-# Carpetas del sistema o temporales
-.DS_Store
-Thumbs.db
