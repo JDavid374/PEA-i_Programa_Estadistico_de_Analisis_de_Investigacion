@@ -22,12 +22,12 @@ La distribución oficial se encuentra empaquetada dentro del directorio [`Proyec
 Proyecto_PEA-i/
 ├── PEA-i.exe                                   # Binario standalone ejecutable (GUI + Scraper API)
 ├── Proyecto_PEA-i_VERSION_ACTUAL.zip           # Paquete integral de distribución v1.0
-├── Aplicativo_CPP/
-├── DLDD-MAFF-JDLA.cpp                          # Código fuente C++ (Consola & Cliente WinHTTP)
-├── DLDD-MAFF-JDLA.exe                          # Ejecutable compilado C++
-├── PEA-i.exe                                   # Scraper local embebido
-├── grupos.txt                                  # Persistencia de grupos en texto plano
-├── investigadores.txt                          # Persistencia de investigadores en texto plano
+│   ├── Aplicativo_CPP/
+│   │   ├── DLDD-MAFF-JDLA.cpp                          # Código fuente C++ (Consola & Cliente WinHTTP)
+│   │   ├── DLDD-MAFF-JDLA.exe                          # Ejecutable compilado C++
+│   │   ├── PEA-i.exe                                   # Scraper local embebido
+│   │   ├── grupos.txt                                  # Persistencia de grupos en texto plano
+│   │   ├── investigadores.txt                          # Persistencia de investigadores en texto plano
 │   │   └── scraper/
 │   │       └── PEA-i.exe
 │   ├── Aplicativo_Python/
@@ -42,10 +42,13 @@ Proyecto_PEA-i/
 │           ├── Adith Bismarck.pdf
 │           └── Aitice.pdf
 └── Versiones/                                  # Registro histórico de entregables
-    ├── Proyecto_PEA-i_Alpha_1.zip
-    ├── Proyecto_PEA-i_Alpha_2.zip
-    ├── Proyecto_PEA-i_Beta_1.zip ... Beta_7.zip
-    └── Proyecto_PEA-i_V1_(VERSION_FINAL_ACTUAL).zip
+    ├── alphas                                  # Versiones Alpha del Aplicativo
+    │   ├── Proyecto_PEA-i_Alpha_1.zip
+    │   ├── Proyecto_PEA-i_Alpha_2.zip
+    ├── betas                                   # Versiones Beta del aplicativo
+    │   └── Proyecto_PEA-i_Beta_1.zip ... Beta_7.zip
+    └── releases                                # Versiones Finales
+        └──Proyecto_PEA-i_V1_(VERSION_FINAL_ACTUAL).zip
 ```
 
 ---
