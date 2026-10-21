@@ -1,6 +1,6 @@
 # PEA-i: Programa Estadístico de Análisis de Investigación
 
-[![Version](https://img.shields.io/badge/Release-v1.0.0--Final-007acc?style=for-the-badge&logo=github)](Proyecto_PEA-i/)
+[![Version](https://img.shields.io/badge/Release-v1.1--Final-007acc?style=for-the-badge&logo=github)](Proyecto_PEA-i/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20x64-blue?style=for-the-badge&logo=windows)](https://microsoft.com/windows)
 [![C++](https://img.shields.io/badge/C%2B%2B-17-00599C?style=for-the-badge&logo=c%2B%2B)](https://isocpp.org/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python)](https://www.python.org/)
@@ -20,35 +20,36 @@ La distribución oficial se encuentra empaquetada dentro del directorio [`Proyec
 
 ```text
 Proyecto_PEA-i/
-├── PEA-i.exe                                           # Binario standalone ejecutable (GUI + Scraper API)
-├── Proyecto_PEA-i_VERSION_ACTUAL.zip                   # Paquete integral de distribución v1.0
+├── PEA-i.exe                                              # Binario standalone ejecutable (GUI + Scraper API)
+├── Proyecto_PEA-i_V1_1_(VERSION_ACTUAL).zip               # Paquete integral de distribución v1.1
 │   ├── Aplicativo_CPP/
-│   │   ├── DLDD-MAFF-JDLA.cpp                          # Código fuente C++ (Consola & Cliente WinHTTP)
-│   │   ├── DLDD-MAFF-JDLA.exe                          # Ejecutable compilado C++
-│   │   ├── PEA-i.exe                                   # Scraper local embebido
-│   │   ├── grupos.txt                                  # Persistencia de grupos en texto plano
-│   │   ├── investigadores.txt                          # Persistencia de investigadores en texto plano
+│   │   ├── DLDD-MAFF-JDLA.cpp                             # Código fuente C++ (Consola & Cliente WinHTTP)
+│   │   ├── DLDD-MAFF-JDLA.exe                             # Ejecutable compilado C++
+│   │   ├── PEA-i.exe                                      # Scraper local embebido
+│   │   ├── grupos.txt                                     # Persistencia de grupos en texto plano
+│   │   ├── investigadores.txt                             # Persistencia de investigadores en texto plano
 │   │   └── scraper/
 │   │       └── PEA-i.exe
 │   ├── Aplicativo_Python/
-│   │   ├── DLDD-MAFF-JDLA.py                           # Script unificado (GUI Tkinter + API REST + Extractores)
-│   │   ├── grupos.json                                 # Persistencia relacional de grupos en JSON
-│   │   └── investigadores.json                         # Persistencia relacional de investigadores en JSON
-│   └── Archivos de Prueba/
+│   │   ├── DLDD-MAFF-JDLA.py                              # Script unificado (GUI Tkinter + API REST + Extractores)
+│   │   ├── grupos.json                                    # Persistencia relacional de grupos en JSON
+│   │   └── investigadores.json                            # Persistencia relacional de investigadores en JSON
+│   └── Archivos_de_Prueba/
 │       ├── CSV/
 │       │   ├── Prueba_CvLAC_Adith_Bismarck.csv
 │       │   └── Prueba_GrupLAC_AITICE.csv
 │       └── PDF/
 │           ├── Adith Bismarck.pdf
 │           └── Aitice.pdf
-└── Versiones/                                          # Registro histórico de entregables
-    ├── alphas                                          # Versiones Alpha del Aplicativo
+└── Versiones/                                             # Registro histórico de entregables
+    ├── alphas                                             # Versiones Alpha del Aplicativo
     │   ├── Proyecto_PEA-i_Alpha_1.zip
     │   └── Proyecto_PEA-i_Alpha_2.zip
-    ├── betas                                           # Versiones Beta del aplicativo
+    ├── betas                                              # Versiones Beta del aplicativo
     │   └── Proyecto_PEA-i_Beta_1.zip ... Beta_7.zip
-    └── releases                                        # Versiones Finales
-        └──Proyecto_PEA-i_V1_(VERSION_FINAL_ACTUAL).zip
+    └── releases                                           # Versiones Finales
+        ├── Proyecto_PEA-i_V1_0.zip
+        └── Proyecto_PEA-i_V1_1_(VERSION_FINAL_ACTUAL).zip
 ```
 
 ---
@@ -61,7 +62,7 @@ Proyecto_PEA-i/
 
 ### Opción 1: Ejecución Directa (Recomendada para Usuarios Finales)
 1. Descargue o ubique el paquete en [`Proyecto_PEA-i/`](Proyecto_PEA-i/).
-2. Descomprima `Proyecto_PEA-i_VERSION_ACTUAL.zip`.
+2. Descomprima `Proyecto_PEA-i_V1_1_(VERSION_ACTUAL).zip`.
 3. Ejecute directamente el aplicativo de su preferencia:
    - Para la interfaz gráfica: ejecute `PEA-i.exe`.
    - Para el entorno de terminal C++: abra la carpeta `Aplicativo_CPP` y ejecute `DLDD-MAFF-JDLA.exe`.
@@ -92,6 +93,8 @@ g++ -std=c++17 -O2 DLDD-MAFF-JDLA.cpp -o DLDD-MAFF-JDLA.exe -lwinhttp
 
 ### 1. Interfaz Gráfica de Escritorio (GUI)
 
+Al iniciar la aplicación, se presenta la ventana de **Configuración de Inicio**, permitiendo al usuario decidir si desea cargar los datos previamente almacenados en los archivos de persistencia (`investigadores.json` y `grupos.json`) o comenzar con una sesión limpia en memoria.
+
 Inicie la aplicación en modo ventana ejecutando:
 ```bash
 # Mediante el binario compilado
@@ -109,7 +112,12 @@ python .\Proyecto_PEA-i\PEA-i_VERSION_ACTUAL\Proyecto_PEA-i\Aplicativo_Python\DL
   - Scraping directo ingresando URLs de CvLAC y GrupLAC.
   - Ingestión de archivos PDF de perfiles y reportes institucionales.
   - Importación masiva desde archivos tabulares CSV.
-- **Estadísticas y Reportes**: Generación de análisis comparativos y matrices de producción.
+- **Estadísticas y Reportes**:
+  - Generación de análisis comparativos cuantitativos y matrices de producción.
+  - **Indicador de Producción Científica (Modelo MinCiencias)**: Módulo cienciométrico que calcula el índice de calidad y producción científica siguiendo los lineamientos oficiales de MinCiencias. La ventana organiza la información en dos pestañas dedicadas:
+    - **Pestaña Investigadores**: Visualización tabular de investigadores con su ID, nombre, total de artículos requeridos, indicador obtenido y estado de evaluación.
+    - **Pestaña Grupos de Investigación**: Visualización de grupos con su código, nombre, artículos requeridos, indicador y estado.
+    - **Desglose de Producción**: Visor detallado que muestra la formulación matemática y la sustitución paso a paso, junto con la lista discriminada de artículos evaluados, su tipología (A1, A2, B, C, Open Access) y su peso relativo. Se puede abrir seleccionando un registro y pulsando el botón *Ver Desglose* o mediante **doble clic** sobre cualquier fila de las tablas.
 - **Menú Interactivo (`ESC`)**: Visualizador interactivo 3D.
 
 ---
@@ -128,6 +136,8 @@ El servidor quedará a la escucha en `http://127.0.0.1:8765`, ofreciendo los sig
 ---
 
 ### 3. Aplicativo de Consola C++
+
+Al arrancar el aplicativo de terminal, se despliega el menú de **Configuración de Inicio de Datos**, donde el usuario elige si desea cargar los datos guardados en los archivos de texto plano (`investigadores.txt` y `grupos.txt`) o iniciar con la memoria limpia.
 
 Inicie el motor de consola ejecutando:
 ```bash
@@ -148,7 +158,11 @@ El menú principal en consola ofrece las siguientes opciones navegables:
 Seleccione una opcion: 
 ```
 
-Los datos procesados se sincronizan de forma automática en los archivos `investigadores.txt` y `grupos.txt`.
+**Funcionalidades cienciométricas en Reportes y Análisis (`[3]`):**
+- Consulta general de indicadores de producción científica dividida en dos tablas formateadas (Investigadores y Grupos de Investigación).
+- Consulta y desglose matemático paso a paso del indicador MinCiencias para un investigador o grupo específico mediante su ID o nombre.
+
+Los datos procesados se almacenan y actualizan en los archivos de texto plano estructurado `investigadores.txt` y `grupos.txt`.
 
 ---
 
