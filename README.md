@@ -21,7 +21,7 @@ La distribución oficial se encuentra empaquetada dentro del directorio [`Proyec
 ```text
 Proyecto_PEA-i/
 ├── PEA-i.exe                                              # Binario standalone ejecutable (GUI + Scraper API)
-├── Proyecto_PEA-i_V1_1_(VERSION_ACTUAL).zip               # Paquete integral de distribución v1.1
+├── Proyecto_PEA-i_V1_1_1_(VERSION_ACTUAL).zip               # Paquete integral de distribución v1.1
 │   ├── Aplicativo_CPP/
 │   │   ├── DLDD-MAFF-JDLA.cpp                             # Código fuente C++ (Consola & Cliente WinHTTP)
 │   │   ├── DLDD-MAFF-JDLA.exe                             # Ejecutable compilado C++
@@ -49,7 +49,8 @@ Proyecto_PEA-i/
     │   └── Proyecto_PEA-i_Beta_1.zip ... Beta_7.zip
     └── releases                                           # Versiones Finales
         ├── Proyecto_PEA-i_V1_0.zip
-        └── Proyecto_PEA-i_V1_1_(VERSION_FINAL_ACTUAL).zip
+        ├── Proyecto_PEA-i_V1_1.zip
+        └── Proyecto_PEA-i_V1_1_1_(VERSION_FINAL_ACTUAL).zip
 ```
 
 ---
@@ -62,7 +63,7 @@ Proyecto_PEA-i/
 
 ### Opción 1: Ejecución Directa (Recomendada para Usuarios Finales)
 1. Descargue o ubique el paquete en [`Proyecto_PEA-i/`](Proyecto_PEA-i/).
-2. Descomprima `Proyecto_PEA-i_V1_1_(VERSION_ACTUAL).zip`.
+2. Descomprima `Proyecto_PEA-i_V1_1_1_(VERSION_ACTUAL).zip`.
 3. Ejecute directamente el aplicativo de su preferencia:
    - Para la interfaz gráfica: ejecute `PEA-i.exe`.
    - Para el entorno de terminal C++: abra la carpeta `Aplicativo_CPP` y ejecute `DLDD-MAFF-JDLA.exe`.
@@ -101,7 +102,7 @@ Inicie la aplicación en modo ventana ejecutando:
 .\Proyecto_PEA-i\PEA-i.exe
 
 # O ejecutando el script de Python directamente
-python .\Proyecto_PEA-i\PEA-i_VERSION_ACTUAL\Proyecto_PEA-i\Aplicativo_Python\DLDD-MAFF-JDLA.py
+python .\Proyecto_PEA-i\Aplicativo_Python\DLDD-MAFF-JDLA.py
 ```
 
 **Módulos integrados en la GUI:**
@@ -141,7 +142,7 @@ Al arrancar el aplicativo de terminal, se despliega el menú de **Configuración
 
 Inicie el motor de consola ejecutando:
 ```bash
-.\Proyecto_PEA-i\Proyecto_PEA-i_VERSION_ACTUAL\Proyecto_PEA-i\Aplicativo_CPP\DLDD-MAFF-JDLA.exe
+.\Proyecto_PEA-i\Aplicativo_CPP\DLDD-MAFF-JDLA.exe
 ```
 
 El menú principal en consola ofrece las siguientes opciones navegables:
