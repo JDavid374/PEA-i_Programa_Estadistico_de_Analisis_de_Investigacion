@@ -1,6 +1,6 @@
 # PEA-i: Programa Estadístico de Análisis de Investigación
 
-[![Version](https://img.shields.io/badge/Release-v1.1--Final-007acc?style=for-the-badge&logo=github)](Proyecto_PEA-i/)
+[![Version](https://img.shields.io/badge/Release-v1.1.1--Final-007acc?style=for-the-badge&logo=github)](Proyecto_PEA-i/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20x64-blue?style=for-the-badge&logo=windows)](https://microsoft.com/windows)
 [![C++](https://img.shields.io/badge/C%2B%2B-17-00599C?style=for-the-badge&logo=c%2B%2B)](https://isocpp.org/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python)](https://www.python.org/)
